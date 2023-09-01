@@ -18,6 +18,7 @@ function App() {
       <Route path="/" element={<Authentication /> }/>
         <Route path="/components/*" element={<Components/>} />
         {/* Other routes */}
+        {/* Git changed */}
       </Routes>
      </Router>
      
