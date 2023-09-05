@@ -19,6 +19,7 @@ function App() {
         <Route path="/components/*" element={<Components/>} />
         {/* Other routes */}
         {/* Git changed */}
+{/*Edited line pulled*/}
       </Routes>
      </Router>
      
