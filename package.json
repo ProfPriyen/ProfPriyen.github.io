@@ -2,7 +2,7 @@
   "name": "myweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ProfPriyen.github.io/sample02",
+  "homepage": "http://ProfPriyen.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
