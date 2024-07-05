@@ -1,77 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import img1 from "./img1.jpg"
-import img2 from "./img2.jpg"
-import img3 from "./img3.jpg"
-import img4 from './img4.jpg'
-const Gallery = [
-    {
-        category:"All"
-    },
-    {
-        id:1,
-        pic:img1,
-        category:"Samsung"
-    },
-    {
-        id:1,
-        pic:img2,
-        category:"Mi2"
-    },
-    {
-        id:1,
-        pic:img3,
-        category:"Oneplus"
-  },
-    {
-        id:1,
-        pic:img4,
-        category:"Mi2"
-    },
+import React,{useState} from 'react'
+import AllData from './AllData'
 
-];
+function Filter() {
 
-function Product () {
-    const[images,setImage]=useState(Gallery);
-    //const [categList, setCategList] = useState(Gallery);
-    
-    const handleproduct=(Item)=>
-    {
-        const finaldata=Gallery.filter((value)=>
-        {
-            return value.category===Item;
-        });
-        if(Item !== "All"){
-            setImage(finaldata);
-            
-        }
-        else{
-            setImage(Gallery)
-            
-        }
-    }
-   
+    const [images,setImage] =useState(AllData);
+    const allItem=() =>{
+        const finalData=AllData.filter((value) =>{
+            return value;
+        })
+        setImage(finalData);
+         }
 
-  return (
-    <div>
-        <button onClick={() =>handleproduct('All')}>All</button>
-        <button onClick={() =>handleproduct('Samsung')}>Samsung</button>
-        <button onClick={() =>handleproduct('Mi2')}>Mi</button>
-        <button onClick={() =>handleproduct('Oneplus')}>Oneplus</button>
-                             
-        <div>
-            {
-                images.map((val)=>
-                {   
-                    return(    
-                    <>
-                        <img src={val.pic} />
-                    </> 
-                    ) 
+         const only11=(categoryItem) =>{
+            const finalData = AllData.filter((value) =>{
+                return value.category===categoryItem;
+            })
+            setImage(finalData);
+             }
+             const only12=(categoryItem) =>{
+                const finalData = AllData.filter((value) =>{
+                    return value.category===categoryItem;
                 })
-            }
-            </div> 
-    </div>
-  )
+                setImage(finalData);
+                 }
+                 const only10=(categoryItem) =>{
+                    const finalData = AllData.filter((value) =>{
+                        return value.category===categoryItem;
+                    })
+                    setImage(finalData);
+                     }
+                     return(
+                        <>
+                        <div>
+                            <button onClick={allItem}>All</button>
+                            <button onClick={() =>only11('Note11')}>Note11</button>.
+                            <button onClick={() =>only12('Note12')}>Note12</button>.
+                            <button onClick={() =>only10('Note12pro')}>Note12pro</button>
+                            </div>
+                            <div>
+                                {images.map((value)=>{
+                                    return(
+                                    <div> <img src={value.pic} className="abc"/></div>
+                                    )
+                                })}
+                                </div>
+                                </>
+                     )
 }
-
-export default Product
+export default Filter

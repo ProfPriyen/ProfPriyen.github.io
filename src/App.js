@@ -3,29 +3,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Login from './Login';
 import Components from './components/Components';
-import Authentication from './Authentication';
 
 
 
 function App() {
   return (
     <>
-   
-   <Router>
+    <Router>
       <Routes>
-
-      <Route path="/" element={<Authentication /> }/>
-        <Route path="/components/*" element={<Components/>} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Login /> }/>
+        <Route path="/components/*" element={<Components name='user' id='01'/>} />
         {/* Other routes */}
-        {/* Git changed */}
-{/*Edited line pulled*/}
       </Routes>
      </Router>
-     
     </>
   );
 }
 
 export default App
-

@@ -9,6 +9,7 @@ const Product = () => {
   return (
     <div>
       <div className="App">
+ 
  <div class="myclass">
    <Task name="Mobile" img1={i1} price="15000 Rs" disc="Hello Mi note 11"/>
  </div>
@@ -19,9 +20,9 @@ const Product = () => {
    <Task name="Mobile" img1={i2} price="25000 Rs" disc="Hello Mi note 12 Pro"/>
  </div>
 
+ 
  </div>
- </div>
-  
+    </div>
   )
 }
 
