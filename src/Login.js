@@ -65,8 +65,8 @@ function Login() {
       {/* <img src={logo2} className="App-logo" alt="logo" /> */}
       <br/>
       <a
-        className="App-link"
-        href="https://www.youtube.com/@priyenpatel5582"
+        className="Site-link"
+        href="https://sites.google.com/view/psp2233"
         target="_blank"
         rel="noopener noreferrer"
       >
