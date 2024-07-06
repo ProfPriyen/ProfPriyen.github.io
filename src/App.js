@@ -15,7 +15,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Login /> }/>
-        <Route path="/components/*" element={<Components name='user' id='01'/>} />
+        <Route path="/components/*" element={<Components name='user01' id='01'/>} />
         {/* Other routes */}
       </Routes>
      </Router>
