@@ -45,9 +45,9 @@ const Navbar = (props) => {
         <li>
     <Link to="Timer">Timer</Link>
     </li>
-    <li>
+    {/* <li>
         <Link to="StockDetail">StockDetail</Link>
-        </li>
+        </li> */}
     
     <li class="dropdown">
     <button class="dropbtn">Effects
@@ -108,7 +108,7 @@ const Navbar = (props) => {
   <Route path="Filter" element={<Filter/>}/>
   <Route path="Arraymap" element={<Arraymap/>}/>
   <Route path="Json" element={<Json/>}/>
-  <Route path="StockDetail" element={<StockDetail/>}/>
+  {/* <Route path="StockDetail" element={<StockDetail/>}/> */}
   
 </Routes>
 </div>
