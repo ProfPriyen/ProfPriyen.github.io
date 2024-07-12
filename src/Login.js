@@ -64,14 +64,14 @@ function Login() {
       <img src= {logo2} className="App-logo" alt="logo" /> 
       {/* <img src={logo2} className="App-logo" alt="logo" /> */}
       <br/>
-      <a
+      {/* <a
         className="App-link"
         href="https://sites.google.com/view/psp2233"
         target="_blank"
         rel="noopener noreferrer"
       >
         Visit Site
-      </a>
+      </a> */}
       <br/>
       </header>
     </>
