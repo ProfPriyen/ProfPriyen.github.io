@@ -60,8 +60,8 @@ function Login() {
         </div>
       </form>
       <br/>
-
-      <img src= {logo2} className="App-logo" alt="logo" /> 
+{/* 
+      <img src= {logo2} className="App-logo" alt="logo" />  */}
       {/* <img src={logo2} className="App-logo" alt="logo" /> */}
       <br/>
       {/* <a
